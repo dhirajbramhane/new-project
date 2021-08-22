@@ -1,0 +1,14 @@
+2021-08-22 22:06:01,779  INFO [main] TestBase:41 - initializating browser
+2021-08-22 22:06:01,795  INFO [main] TestBase:25 - reading a value for a prooerty: browser
+2021-08-22 22:06:01,795  INFO [main] TestBase:28 - initializing property file
+2021-08-22 22:06:01,795  INFO [main] TestBase:35 - property value found in the file with key as: browserand value is : chrome
+2021-08-22 22:06:01,795  INFO [main] TestBase:43 - User wabts to automate with chrome browser
+2021-08-22 22:06:04,882  INFO [main] TestBase:59 - launching an application
+2021-08-22 22:06:04,882  INFO [main] TestBase:25 - reading a value for a prooerty: url
+2021-08-22 22:06:04,882  INFO [main] TestBase:28 - initializing property file
+2021-08-22 22:06:04,882  INFO [main] TestBase:35 - property value found in the file with key as: urland value is : https://javabykiran.in/Other/thbees/
+2021-08-22 22:07:05,080  INFO [main] BlogTest:20 - intializing the Blogpage
+2021-08-22 22:07:05,080  INFO [main] BlogTest:45 - click on the all post Button to see all posted Blogs
+2021-08-22 22:07:05,096  INFO [main] BlogTest:27 - verifying the Details of the Blog
+2021-08-22 22:07:05,096  INFO [main] BlogTest:37 - verifying is there any image on post Blog
+2021-08-22 22:07:05,096  INFO [main] BlogTest:53 - verifying different  social media sharing button 
