@@ -2,52 +2,52 @@
 <testng-results skipped="0" failed="1" ignored="0" total="9" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="67320" started-at="2021-08-22T13:41:44Z" finished-at="2021-08-22T13:42:51Z">
+  <suite name="Suite" duration-ms="63222" started-at="2021-08-22T20:02:25Z" finished-at="2021-08-22T20:03:28Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="67320" started-at="2021-08-22T13:41:44Z" finished-at="2021-08-22T13:42:51Z">
+    <test name="Test" duration-ms="63222" started-at="2021-08-22T20:02:25Z" finished-at="2021-08-22T20:03:28Z">
       <class name="com.pageTest.HomeTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.pageTest.HomeTest@5a8e6209]" name="setup" is-config="true" duration-ms="11606" started-at="2021-08-22T13:41:44Z" finished-at="2021-08-22T13:41:55Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.pageTest.HomeTest@61f8bee4]" name="setup" is-config="true" duration-ms="6406" started-at="2021-08-22T20:02:25Z" finished-at="2021-08-22T20:02:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifyBlogSectionHeader()[pri:0, instance:com.pageTest.HomeTest@5a8e6209]" name="verifyBlogSectionHeader" duration-ms="272" started-at="2021-08-22T13:41:55Z" finished-at="2021-08-22T13:41:56Z">
+        <test-method status="PASS" signature="verifyBlogSectionHeader()[pri:0, instance:com.pageTest.HomeTest@61f8bee4]" name="verifyBlogSectionHeader" duration-ms="274" started-at="2021-08-22T20:02:31Z" finished-at="2021-08-22T20:02:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBlogSectionHeader -->
-        <test-method status="PASS" signature="verifyBlogSectionSubHeader()[pri:0, instance:com.pageTest.HomeTest@5a8e6209]" name="verifyBlogSectionSubHeader" duration-ms="32" started-at="2021-08-22T13:41:56Z" finished-at="2021-08-22T13:41:56Z">
+        <test-method status="PASS" signature="verifyBlogSectionSubHeader()[pri:0, instance:com.pageTest.HomeTest@61f8bee4]" name="verifyBlogSectionSubHeader" duration-ms="38" started-at="2021-08-22T20:02:31Z" finished-at="2021-08-22T20:02:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBlogSectionSubHeader -->
-        <test-method status="PASS" signature="verifyBlogsTitles()[pri:0, instance:com.pageTest.HomeTest@5a8e6209]" name="verifyBlogsTitles" duration-ms="62" started-at="2021-08-22T13:41:56Z" finished-at="2021-08-22T13:41:56Z">
+        <test-method status="PASS" signature="verifyBlogsTitles()[pri:0, instance:com.pageTest.HomeTest@61f8bee4]" name="verifyBlogsTitles" duration-ms="59" started-at="2021-08-22T20:02:31Z" finished-at="2021-08-22T20:02:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBlogsTitles -->
-        <test-method status="PASS" signature="verifyHeader()[pri:0, instance:com.pageTest.HomeTest@5a8e6209]" name="verifyHeader" duration-ms="47" started-at="2021-08-22T13:41:56Z" finished-at="2021-08-22T13:41:56Z">
+        <test-method status="PASS" signature="verifyHeader()[pri:0, instance:com.pageTest.HomeTest@61f8bee4]" name="verifyHeader" duration-ms="35" started-at="2021-08-22T20:02:31Z" finished-at="2021-08-22T20:02:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHeader -->
-        <test-method status="PASS" signature="verifyToReadSpecifiedByReadMoreBuutonBlog()[pri:0, instance:com.pageTest.HomeTest@5a8e6209]" name="verifyToReadSpecifiedByReadMoreBuutonBlog" duration-ms="3786" started-at="2021-08-22T13:41:56Z" finished-at="2021-08-22T13:42:00Z">
+        <test-method status="PASS" signature="verifyToReadSpecifiedByReadMoreBuutonBlog()[pri:0, instance:com.pageTest.HomeTest@61f8bee4]" name="verifyToReadSpecifiedByReadMoreBuutonBlog" duration-ms="3845" started-at="2021-08-22T20:02:32Z" finished-at="2021-08-22T20:02:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyToReadSpecifiedByReadMoreBuutonBlog -->
       </class> <!-- com.pageTest.HomeTest -->
       <class name="com.pageTest.BlogTest">
-        <test-method status="PASS" signature="verifyAllPostBtn()[pri:0, instance:com.pageTest.BlogTest@4b4523f8]" name="verifyAllPostBtn" duration-ms="1329" started-at="2021-08-22T13:42:00Z" finished-at="2021-08-22T13:42:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAllPostBtn -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.pageTest.BlogTest@4b4523f8]" name="setup" is-config="true" duration-ms="0" started-at="2021-08-22T13:42:00Z" finished-at="2021-08-22T13:42:00Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.pageTest.BlogTest@7b49cea0]" name="setup" is-config="true" duration-ms="0" started-at="2021-08-22T20:02:35Z" finished-at="2021-08-22T20:02:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="verifyBlogDetails()[pri:0, instance:com.pageTest.BlogTest@4b4523f8]" name="verifyBlogDetails" duration-ms="40" started-at="2021-08-22T13:42:01Z" finished-at="2021-08-22T13:42:01Z">
+        <test-method status="PASS" signature="verifyAllPostBtn()[pri:0, instance:com.pageTest.BlogTest@7b49cea0]" name="verifyAllPostBtn" duration-ms="2183" started-at="2021-08-22T20:02:35Z" finished-at="2021-08-22T20:02:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllPostBtn -->
+        <test-method status="FAIL" signature="verifyBlogDetails()[pri:0, instance:com.pageTest.BlogTest@7b49cea0]" name="verifyBlogDetails" duration-ms="37" started-at="2021-08-22T20:02:38Z" finished-at="2021-08-22T20:02:38Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [POSTED BY SYSTEM ADMINISTRATOR   JUN 25, 2019   NEWS VIEWS (151)] but found [POSTED BY SYSTEM ADMINISTRATOR   JUN 25, 2019   NEWS VIEWS (170)]]]>
+              <![CDATA[expected [POSTED BY SYSTEM ADMINISTRATOR   JUN 25, 2019   NEWS VIEWS (170)] but found [POSTED BY SYSTEM ADMINISTRATOR   JUN 25, 2019   NEWS VIEWS (173)]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [POSTED BY SYSTEM ADMINISTRATOR   JUN 25, 2019   NEWS VIEWS (151)] but found [POSTED BY SYSTEM ADMINISTRATOR   JUN 25, 2019   NEWS VIEWS (170)]
+              <![CDATA[java.lang.AssertionError: expected [POSTED BY SYSTEM ADMINISTRATOR   JUN 25, 2019   NEWS VIEWS (170)] but found [POSTED BY SYSTEM ADMINISTRATOR   JUN 25, 2019   NEWS VIEWS (173)]
 at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertEqualsImpl(Assert.java:137)
@@ -86,11 +86,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBlogDetails -->
-        <test-method status="PASS" signature="verifyImgOfPostBlog()[pri:0, instance:com.pageTest.BlogTest@4b4523f8]" name="verifyImgOfPostBlog" duration-ms="63" started-at="2021-08-22T13:42:01Z" finished-at="2021-08-22T13:42:01Z">
+        <test-method status="PASS" signature="verifyImgOfPostBlog()[pri:0, instance:com.pageTest.BlogTest@7b49cea0]" name="verifyImgOfPostBlog" duration-ms="187" started-at="2021-08-22T20:02:38Z" finished-at="2021-08-22T20:02:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyImgOfPostBlog -->
-        <test-method status="PASS" signature="verifySocialMediaSharingBtn()[pri:0, instance:com.pageTest.BlogTest@4b4523f8]" name="verifySocialMediaSharingBtn" duration-ms="50066" started-at="2021-08-22T13:42:01Z" finished-at="2021-08-22T13:42:51Z">
+        <test-method status="PASS" signature="verifySocialMediaSharingBtn()[pri:0, instance:com.pageTest.BlogTest@7b49cea0]" name="verifySocialMediaSharingBtn" duration-ms="50088" started-at="2021-08-22T20:02:38Z" finished-at="2021-08-22T20:03:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySocialMediaSharingBtn -->

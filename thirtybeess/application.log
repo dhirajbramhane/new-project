@@ -1,14 +1,28 @@
-2021-08-22 22:06:01,779  INFO [main] TestBase:41 - initializating browser
-2021-08-22 22:06:01,795  INFO [main] TestBase:25 - reading a value for a prooerty: browser
-2021-08-22 22:06:01,795  INFO [main] TestBase:28 - initializing property file
-2021-08-22 22:06:01,795  INFO [main] TestBase:35 - property value found in the file with key as: browserand value is : chrome
-2021-08-22 22:06:01,795  INFO [main] TestBase:43 - User wabts to automate with chrome browser
-2021-08-22 22:06:04,882  INFO [main] TestBase:59 - launching an application
-2021-08-22 22:06:04,882  INFO [main] TestBase:25 - reading a value for a prooerty: url
-2021-08-22 22:06:04,882  INFO [main] TestBase:28 - initializing property file
-2021-08-22 22:06:04,882  INFO [main] TestBase:35 - property value found in the file with key as: urland value is : https://javabykiran.in/Other/thbees/
-2021-08-22 22:07:05,080  INFO [main] BlogTest:20 - intializing the Blogpage
-2021-08-22 22:07:05,080  INFO [main] BlogTest:45 - click on the all post Button to see all posted Blogs
-2021-08-22 22:07:05,096  INFO [main] BlogTest:27 - verifying the Details of the Blog
-2021-08-22 22:07:05,096  INFO [main] BlogTest:37 - verifying is there any image on post Blog
-2021-08-22 22:07:05,096  INFO [main] BlogTest:53 - verifying different  social media sharing button 
+2021-08-23 01:32:25,209  INFO [main] TestBase:41 - initializating browser
+2021-08-23 01:32:25,212  INFO [main] TestBase:25 - reading a value for a prooerty: browser
+2021-08-23 01:32:25,212  INFO [main] TestBase:28 - initializing property file
+2021-08-23 01:32:25,213  INFO [main] TestBase:35 - property value found in the file with key as: browserand value is : chrome
+2021-08-23 01:32:25,213  INFO [main] TestBase:43 - User wabts to automate with chrome browser
+2021-08-23 01:32:27,712  INFO [main] TestBase:59 - launching an application
+2021-08-23 01:32:27,712  INFO [main] TestBase:25 - reading a value for a prooerty: url
+2021-08-23 01:32:27,712  INFO [main] TestBase:28 - initializing property file
+2021-08-23 01:32:27,713  INFO [main] TestBase:35 - property value found in the file with key as: urland value is : https://javabykiran.in/Other/thbees/
+2021-08-23 01:32:31,621  INFO [main] HomeTest:38 - verifying Blog Section Header 
+2021-08-23 01:32:31,890  INFO [main] HomeTest:42 - Header is as expected
+2021-08-23 01:32:31,894  INFO [main] HomeTest:47 - verifying Blog Section Sub Header
+2021-08-23 01:32:31,930  INFO [main] HomeTest:51 - Sub Header is as expected
+2021-08-23 01:32:31,933  INFO [main] HomeTest:56 - verifying Home page Display Blog Titles
+2021-08-23 01:32:31,990  INFO [main] HomeTest:60 - Blog Titles is as expected
+2021-08-23 01:32:31,993  INFO [main] HomeTest:30 - verifying header
+2021-08-23 01:32:32,027  INFO [main] HomeTest:33 - Header is as Expected
+2021-08-23 01:32:32,029  INFO [main] HomeTest:65 - Clicks on the Readmore button to read full Blog
+2021-08-23 01:32:35,872  INFO [main] HomeTest:69 - Readmore button clicks and  move to full Blog page
+2021-08-23 01:32:35,876  INFO [main] BlogTest:20 - intializing the Blogpage
+2021-08-23 01:32:35,877  INFO [main] BlogTest:45 - click on the all post Button to see all posted Blogs
+2021-08-23 01:32:38,059  INFO [main] BlogTest:48 - All posted Blog Page open an see posted Blogs
+2021-08-23 01:32:38,061  INFO [main] BlogTest:27 - verifying the Details of the Blog
+2021-08-23 01:32:38,101  INFO [main] BlogTest:37 - verifying is there any image on post Blog
+2021-08-23 01:32:38,287  INFO [main] BlogTest:39 - image is present in the Posted Blog
+2021-08-23 01:32:38,289  INFO [main] BlogTest:53 - verifying different  social media sharing button 
+2021-08-23 01:33:28,376  INFO [main] BlogPage:56 - all social Media windows open and close 
+2021-08-23 01:33:28,376  INFO [main] BlogTest:55 - Open all social media windows and closed
