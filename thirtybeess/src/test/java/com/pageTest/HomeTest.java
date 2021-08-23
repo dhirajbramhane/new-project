@@ -33,7 +33,7 @@ public class HomeTest extends TestBase {
 		log.info("Header is as Expected");
 	}
 
-	@Test
+	@Test(priority=1)
 	public void verifyBlogSectionHeader() {
 		log.info("verifying Blog Section Header ");
 		String actual = hp.actBlogHeader();
@@ -42,7 +42,7 @@ public class HomeTest extends TestBase {
 		log.info("Header is as expected");
 	}
 
-	@Test
+	@Test(priority=2)
 	public void verifyBlogSectionSubHeader() {
 		log.info("verifying Blog Section Sub Header");
 		String actual = hp.actblogSubHeader();
@@ -51,7 +51,7 @@ public class HomeTest extends TestBase {
 		log.info("Sub Header is as expected");
 	}
 
-	@Test
+	@Test(priority=3)
 	public void verifyBlogsTitles() {
 		log.info("verifying Home page Display Blog Titles");
 		ArrayList<String> actual = hp.actBlogTitles();
@@ -60,7 +60,7 @@ public class HomeTest extends TestBase {
 		log.info("Blog Titles is as expected");
 	}
 
-	@Test
+	@Test(priority=4)
 	public void verifyToReadSpecifiedByReadMoreBuutonBlog() {
 		log.info("Clicks on the Readmore button to read full Blog");
 		hp.readMorebtn().click();
