@@ -9,6 +9,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.base.TestBase;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
 import com.thirtybees.pages.BlogPage;
 import com.thirtybees.pages.HomePage;
 
@@ -17,6 +19,8 @@ public class HomeTest extends TestBase {
 	WebDriver driver;
 	HomePage hp;
 	static BlogPage bp;
+	ExtentReports extent;
+	ExtentTest test;
 	Logger log = Logger.getLogger(HomeTest.class);
 
 	@BeforeClass
