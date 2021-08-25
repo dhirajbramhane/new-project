@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
+<suite name="Suite" parallel="tests" thread-count="4">
   <test thread-count="5" name="Test">
+    <classes>
+     <class name="com.pageTest.HomePageTest"/>
+     <class name="com.pageTest.LoginPageTest"/>
+      <class name="com.pageTest.SoapPageTest"/>
+      <class name="com.pageTest.MugPageTest"/>
+      <class name="com.pageTest.CandlePageTest"/>
+     
+    </classes>
+  </test> 
+  <test thread-count="2" name="Test1">
     <classes>
      <class name="com.pageTest.HomeTest"/>
       <class name="com.pageTest.BlogTest"/>
-  
     </classes>
-  </test> <!-- Test -->
+  </test><!-- Test -->
 </suite> <!-- Suite -->

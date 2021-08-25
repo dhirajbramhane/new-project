@@ -1,7 +1,7 @@
 package com.pageTest;
 
 import org.apache.log4j.Logger;
-
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -11,7 +11,7 @@ import com.thirtybees.pages.BlogPage;
 
 public class BlogTest extends TestBase {
 
-	// WebDriver driver;
+	 WebDriver driver;
 	Logger log = Logger.getLogger(BlogTest.class);
 	BlogPage bp;
 
@@ -22,7 +22,7 @@ public class BlogTest extends TestBase {
 
 	}
 
-	@Test(priority=2)
+	@Test
 	public void verifyBlogDetails() {
 		log.info("verifying the Details of the Blog");
 		String actual = bp.actblogDetails();
@@ -32,7 +32,7 @@ public class BlogTest extends TestBase {
 
 	}
 
-	@Test(priority=1)
+	@Test
 	public void verifyImgOfPostBlog() {
 		log.info("verifying is there any image on post Blog");
 		Assert.assertTrue(bp.imageOfPostBlog());
@@ -40,7 +40,7 @@ public class BlogTest extends TestBase {
 
 	}
 
-	@Test(priority=4)
+	@Test(priority=1)
 	public void verifyAllPostBtn() {
 		log.info("click on the all post Button to see all posted Blogs");
 		bp.allPostBtn().click();
@@ -48,7 +48,7 @@ public class BlogTest extends TestBase {
 		log.info("All posted Blog Page open an see posted Blogs");
 	}
 
-	@Test(priority=3)
+	@Test
 	public void verifySocialMediaSharingBtn() throws InterruptedException {
 		log.info("verifying different  social media sharing button ");
 		Assert.assertTrue(bp.allSocialMediaSharingBtns());

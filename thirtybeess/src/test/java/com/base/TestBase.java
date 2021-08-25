@@ -18,9 +18,19 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 public class TestBase {
 
 	public static WebDriver driver;
-
+	public static Properties prop;
 	public static Logger log = Logger.getLogger(TestBase.class);
-
+	
+	public TestBase() {
+		FileInputStream fis;
+		try {
+			prop = new Properties();
+			fis = new FileInputStream(System.getProperty("user.dir") + "\\src\\main\\resources\\config.properties");
+			prop.load(fis);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 	public static String readProperty(String key) {
 		 log.info("reading a value for a prooerty: "+key);
 		Properties ps = new Properties();

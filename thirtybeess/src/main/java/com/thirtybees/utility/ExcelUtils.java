@@ -10,11 +10,14 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class ExcelUtils {
+	static DataFormatter df = new DataFormatter();
 	 static FileInputStream file;
 	 static Workbook wb;
-
+	 
+	 static String cellValue;
+	 
 	public  static void getAllDataAsDP(String filepath, String sheetname, int parameter) {
-		DataFormatter df = new DataFormatter();
+		
 		try {
 			file = new FileInputStream(filepath);
 			wb = WorkbookFactory.create(file);
@@ -36,8 +39,9 @@ public class ExcelUtils {
 		}
 	}
 
-	public void getAllData(String filepath, String sheetname) {
-		DataFormatter df = new DataFormatter();
+	public ArrayList<String> getAllData(String filepath, String sheetname) {
+		ArrayList<String> data=new ArrayList<String>();
+		
 		try {
 			file = new FileInputStream(filepath);
 			wb = WorkbookFactory.create(file);
@@ -51,11 +55,13 @@ public class ExcelUtils {
 			int cols = sh.getRow(i).getLastCellNum();
 			for (int j = 0; j < rows; j++) {
 				Cell c = sh.getRow(i).getCell(j);
-				String data = df.formatCellValue(c);
-				System.out.println(data);
+				cellValue = df.formatCellValue(c);
+				data.add(cellValue);
 			}
+			}
+		return data;
 		}
-	}
+	
 
 	public static  String getData(String filepath, String sheetname, int row, int cell) {
 		DataFormatter df = new DataFormatter();

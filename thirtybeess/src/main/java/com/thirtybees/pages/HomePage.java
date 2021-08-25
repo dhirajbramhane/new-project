@@ -14,17 +14,83 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
 import com.thirtybees.objrepository.HomeRepository;
+import com.thirtybees.utility.ActionUtil;
+import com.thirtybees.utility.ExcelUtil;
 import com.thirtybees.utility.ExcelUtils;
+import com.thirtybees.utility.WIndowHandles;
 
 public class HomePage extends HomeRepository {
 
-	WebDriver driver;
+	public WebDriver driver;
 
 	public HomePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 		this.driver = driver;
 	}
-
+	public void navigateToLoginPage() {
+		ActionUtil.click(signInLink);
+	}
+	
+	
+	public CandlePage navigateToCandlePage() {
+		candleImg.click();
+		return new CandlePage(driver);	
+	}
+	
+	public SoapPage navigateToSoapPage() {
+		soapImg.click();
+		return new SoapPage(driver);	
+	}
+	
+	public MugPage navigateToMugPage() {
+		mugImg.click();
+		return new MugPage(driver);	
+	}
+	
+	public String verifyLabelOfCandle() {
+		String actText=candle.getText();
+		return actText;
+	}
+	
+	public String verifyLabelOfSoap() {
+		String actText=soap.getText();
+		return actText;
+	}
+	
+	public boolean verifyBlogHeaders() {
+		ArrayList<String> actHeader=new ArrayList<String>();
+		for(WebElement header: blogHeaders) {
+			actHeader.add(header.getText());	
+		}
+		System.out.println("Actual blog headers are "+actHeader);
+		
+		ArrayList<String> expHeader=ExcelUtil.getAllData(System.getProperty("user.dir")+"\\src\\test\\resources\\TestData.xlsx", "Blog headers");
+		System.out.println("Expected blog headers are "+expHeader);
+		
+		if(actHeader.equals(expHeader)) {
+			return true;
+		}
+		return false;
+	}
+	
+	public boolean verifySliderHeading() {
+		ArrayList<String> actHeader=new ArrayList<String>();
+		System.out.println("Actual slider heading from website");
+		for(WebElement header: sliderHeading) {
+			actHeader.add(header.getText());
+			ActionUtil.click(nextBtn);
+			System.out.println(actHeader);
+		}System.out.println(actHeader);
+		/*
+		 * System.out.println("Expected slider heading from website"); ArrayList<String>
+		 * expHeader=ExcelUtil.getAllData(System.getProperty("user.dir")+
+		 * "\\src\\test\\resources\\TestData.xlsx", "Blog headers");
+		 */
+		return false;
+		
+		
+	}
+	
 	
 	public String header() {
 		//JavascriptExecutor js = (JavascriptExecutor)driver;
@@ -34,13 +100,29 @@ public class HomePage extends HomeRepository {
 
 	}
 
-	public WebElement shopnowbtn() {
-		 return shopnowbtn;
+	public String shopnowbtn() {
+		String window= null;
+		String mainWindows = driver.getWindowHandle();
+		for (WebElement webElement : shopnowbtn) {
+			if (webElement.isDisplayed()) {
+				webElement.click();
+			 window=driver.getWindowHandle();    
+				}
+		}
 		
+		return window;
 	}
-	public boolean marketplacePageLink() {
+	public boolean marketplacePageLink(WebDriver driver) {
 		Actions action = new Actions(driver);
-		action.moveToElement(marketplacelink);
+		action.moveToElement(marketplacelink).build().perform();;;
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			
+			e.printStackTrace();
+		}
+		driver.navigate().back();
+		driver.switchTo().parentFrame();
 		 return true;
 		
 	}
